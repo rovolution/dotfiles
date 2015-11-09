@@ -1,0 +1,8 @@
+[user]
+	name = Rohit Kalkur
+	email = rohit.kalkur@gmail.com
+[push]
+	default = current
+	followTags = true
+[branch]
+  autosetuprebase = always
