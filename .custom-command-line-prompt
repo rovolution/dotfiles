@@ -1,0 +1,21 @@
+### Show the following when in a directory:
+## User@machine
+## Working directory path
+## Node version (vX.XX.XX)
+## Git branch name
+## EX: user@machine:directoryPath:vX.XX.XX (Git branch name)
+
+function parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+function parse_node_version () {
+	echo "$(node -v)"
+}
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+NO_COLOR="\[\033[0m\]"
+
+PS1="$GREEN\u@\h$NO_COLOR:\w:$RED\$(parse_node_version)$YELLOW\$(parse_git_branch)$NO_COLOR\$ "

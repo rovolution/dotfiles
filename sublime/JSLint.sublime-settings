@@ -1,0 +1,4 @@
+{
+	// if true, run jslint on save.
+    "run_on_save" : false
+}

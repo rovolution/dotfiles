@@ -1,0 +1,21 @@
+### Define aliases
+
+echo "Loading common aliases..."
+
+alias chrome="open -a \"Google Chrome\""
+alias copydir="pwd | pbcopy"
+alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+## Git aliases
+echo "Loading Git aliases..."
+
+alias gpbt="git push && git push --tags" # Push commits and tags to origin remote
+alias gcb="git rev-parse --abbrev-ref HEAD" # Display current branch name
+alias gpr="git pull -r"
+alias gsano="git show -a --name-only"
+alias gsa="git show -a"
+alias gm="git merge --no-ff"
+alias grc="git reset --hard HEAD~1"
+alias gp="git remote prune"
+alias gphf="git push -f"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"

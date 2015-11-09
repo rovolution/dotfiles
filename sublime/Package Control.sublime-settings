@@ -1,0 +1,34 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"BracketHighlighter",
+		"DocBlockr",
+		"EJS",
+		"Emmet",
+		"GitGutter",
+		"Github Tools",
+		"JsFormat",
+		"JSONLint",
+		"LESS",
+		"Markdown Preview",
+		"MarkdownCodeBlockWrapper",
+		"Oceanic Next Color Scheme",
+		"Package Control",
+		"Sass",
+		"SASS Build",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SyncedSideBar",
+		"Table Editor",
+		"Theme - Spacegray",
+		"Trimmer",
+		"Whitespace"
+	]
+}

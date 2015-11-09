@@ -1,0 +1,3 @@
+source ~/.env-variables
+source ~/.aliases
+source ~/.custom-command-line-prompt
