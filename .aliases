@@ -10,7 +10,8 @@ alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 echo "Loading Git aliases..."
 
 alias gpbt="git push && git push --tags" # Push commits and tags to origin remote
-alias gcb="git rev-parse --abbrev-ref HEAD" # Display current branch name
+alias gb="git rev-parse --abbrev-ref HEAD" # Display current branch name
+alias gcb="git checkout -b" # Checkout new branch
 alias gpr="git pull -r"
 alias gsano="git show -a --name-only"
 alias gsa="git show -a"
