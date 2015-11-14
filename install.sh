@@ -1,8 +1,42 @@
 #!/bin/sh
 
+##############################
+# DESCRIPTION
+##############################
+# This script is used to install all of the dotfiles
+
+
+##############################
+# COMMAND LINE OPTIONS
+##############################
+# -c :: if specified, will install apps via homebrew cas#
+
+##############################
+# BEGIN SCRIPT
+##############################
+
+# Default command line arg values
+INSTALL_HOMEBREW_CASK=false
+
+## Step 0: Parse command line args
+while getopts "c" opt; do
+	case $opt in
+		c)
+			INSTALL_HOMEBREW_CASK=true
+			echo "-c specified! Will install programs via Homebrew Cask" >&2
+			;;
+		\?)
+			echo "Invalid option: -$OPTARG" >&2
+			exit
+			;;
+	esac
+done
+
 ## Step 1: install programs via Homebrew Cask
-echo "Installing apps"
-# sh brew.sh
+if [ "$INSTALL_HOMEBREW_CASK" = true ] ; then
+	echo "Installing apps via Homebrew Cask"
+	sh brew.sh
+fi
 
 ## Step 2: Create symlinks to aliases/env variables
 echo "Installing aliases/env-variables"
