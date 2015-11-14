@@ -6,6 +6,11 @@ alias chrome="open -a \"Google Chrome\""
 alias copydir="pwd | pbcopy"
 alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 
+cd_dir () {
+	cd `pbpaste`
+}
+
+
 ## Git aliases
 echo "Loading Git aliases..."
 
