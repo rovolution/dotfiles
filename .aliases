@@ -20,6 +20,7 @@ alias gcb="git checkout -b" # Checkout new branch
 alias gpr="git pull -r"
 alias gsano="git show -a --name-only"
 alias gsa="git show -a"
+alias ga="git add ."
 alias gm="git merge --no-ff"
 alias grc="git reset --hard HEAD~1"
 alias gp="git remote prune"
