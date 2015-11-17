@@ -18,6 +18,7 @@ alias gpbt="git push && git push --tags" # Push commits and tags to origin remot
 alias gb="git rev-parse --abbrev-ref HEAD" # Display current branch name
 alias gcb="git checkout -b" # Checkout new branch
 alias gpr="git pull -r"
+alias gco="git checkout"
 alias gsano="git show -a --name-only"
 alias gsa="git show -a"
 alias ga="git add ."
