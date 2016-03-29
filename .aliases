@@ -13,7 +13,7 @@ cd_dir () {
 
 ## Git aliases
 echo "Loading Git aliases..."
-
+alias git=hub
 alias gpbt="git push && git push --tags" # Push commits and tags to origin remote
 alias gb="git rev-parse --abbrev-ref HEAD" # Display current branch name
 alias gcb="git checkout -b" # Checkout new branch
@@ -33,4 +33,4 @@ alias gcm="git commit -m"
 alias gf="git fetch"
 alias gr="git rebase"
 alias gst="git status"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias gl="git log --graph --pretty=format:'%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --date=relative"
