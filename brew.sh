@@ -3,6 +3,9 @@
 echo installing homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "tap for latest versions"
+brew tap homebrew/versions
+
 echo "installing brew formulae + binaries"
 brew install git
 brew install hub
