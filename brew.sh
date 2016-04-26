@@ -3,7 +3,10 @@
 echo installing homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo installing brew formulae
+echo "installing brew formulae + binaries"
+brew install git
+brew install hub
+brew install node
 brew install ruby-install
 brew install nvm
 brew install caskroom/cask/brew-cask
