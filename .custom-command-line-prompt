@@ -29,4 +29,4 @@ function switch_to_specified_node_version() {
    fi
 }
 
-export PROMPT_COMMAND=switch_to_specified_node_version
+export PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && switch_to_specified_node_version; __new_wd=$PWD'
