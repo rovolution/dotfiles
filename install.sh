@@ -47,6 +47,7 @@ create_symlink_from_user_root()
 
 create_symlink_from_user_root .index-dotfile
 create_symlink_from_user_root .aliases
+create_symlink_from_user_root .general-setup
 create_symlink_from_user_root .custom-command-line-prompt
 create_symlink_from_user_root .env-variables
 

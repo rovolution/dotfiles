@@ -1,0 +1,2 @@
+## Use default Node version
+nvm use default
