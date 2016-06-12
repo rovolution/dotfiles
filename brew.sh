@@ -7,6 +7,7 @@ echo "tap for latest versions"
 brew tap homebrew/versions
 
 echo "installing brew formulae + binaries"
+brew install htop
 brew install ag
 brew install git
 brew install hub
