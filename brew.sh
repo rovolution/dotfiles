@@ -33,7 +33,8 @@ brew cask install firefox
 echo "installing apps"
 brew cask install shiftit
 brew cask install notational-velocity
-brew cask install rdio
+brew cask install spotify
+brew cask install spotify-notifications
 brew cask install dropbox
 brew cask install slack
 brew cask install lastpass
