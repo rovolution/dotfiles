@@ -15,6 +15,7 @@ brew install node
 brew install ruby-install
 brew install nvm
 brew install jq
+brew install diff-so-fancy
 brew install caskroom/cask/brew-cask
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
