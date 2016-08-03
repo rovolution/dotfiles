@@ -32,6 +32,7 @@ brew cask install google-chrome
 brew cask install firefox
 
 echo "installing apps"
+brew cask install fluid
 brew cask install shiftit
 brew cask install notational-velocity
 brew cask install spotify

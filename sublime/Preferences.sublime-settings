@@ -1,7 +1,7 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
 	"detect_indentation": true,
-	"font_size": 18,
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"
