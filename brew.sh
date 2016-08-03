@@ -24,7 +24,7 @@ brew tap caskroom/versions
 
 echo "installing developer tools"
 brew cask install iterm2
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install virtualbox
 
 echo "installing browsers"
