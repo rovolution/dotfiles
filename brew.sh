@@ -14,6 +14,7 @@ brew install hub
 brew install node
 brew install ruby-install
 brew install nvm
+brew install rename
 brew install jq
 brew install diff-so-fancy
 brew install caskroom/cask/brew-cask
