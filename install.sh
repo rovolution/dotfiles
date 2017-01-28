@@ -63,6 +63,3 @@ ln -s `pwd`/sublime "$SUBLIME_USER_PACKAGE_DIRECTORY"
 echo "Installing Git config"
 rm -rf ~/.gitconfig
 ln -s `pwd`/.gitconfig ~/.gitconfig
-
-# Step 5: Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
-stty -ixon

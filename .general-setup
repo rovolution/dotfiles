@@ -1,2 +1,5 @@
 ## Use default Node version
 nvm use default
+
+## Step 5: Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
+stty -ixon
