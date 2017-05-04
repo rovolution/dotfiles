@@ -1,4 +1,4 @@
 source ~/.env-variables
 source ~/.aliases
-source ~/.general-setup
 source ~/.custom-command-line-prompt
+source ~/.general-setup
