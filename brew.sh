@@ -28,6 +28,7 @@ echo "installing developer tools"
 brew cask install iterm2
 brew cask install sublime-text
 brew cask install virtualbox
+brew cask install postman
 
 echo "installing browsers"
 brew cask install google-chrome
