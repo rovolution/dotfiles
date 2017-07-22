@@ -31,6 +31,7 @@ brew cask install virtualbox
 
 echo "installing browsers"
 brew cask install google-chrome
+brew cask install google-chrome-canary
 brew cask install firefox
 
 echo "installing apps"
@@ -43,6 +44,7 @@ brew cask install spotify-notifications
 brew cask install dropbox
 brew cask install slack
 brew cask install lastpass
+brew cask install vlc
 
 echo "Finish"
 brew cleanup --force
