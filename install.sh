@@ -59,7 +59,10 @@ SUBLIME_USER_PACKAGE_DIRECTORY="$HOME/Library/Application Support/Sublime Text 3
 rm -rf "$SUBLIME_USER_PACKAGE_DIRECTORY"
 ln -s `pwd`/sublime "$SUBLIME_USER_PACKAGE_DIRECTORY"
 
-# Step 4: Create .gitconfig symlink
+# Step 4: Set default Node to system version
+nvm alias default system
+
+# Step 5: Create .gitconfig symlink
 echo "Installing Git config"
 rm -rf ~/.gitconfig
 ln -s `pwd`/.gitconfig ~/.gitconfig
