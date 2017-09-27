@@ -46,6 +46,7 @@ brew cask install dropbox
 brew cask install slack
 brew cask install lastpass
 brew cask install vlc
+brew cask install flux
 
 echo "Finish"
 brew cleanup --force
