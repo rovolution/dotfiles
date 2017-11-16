@@ -27,6 +27,7 @@ brew tap caskroom/versions
 echo "installing developer tools"
 brew cask install iterm2
 brew cask install sublime-text
+brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install postman
 
