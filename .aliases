@@ -10,6 +10,8 @@ cd_dir () {
 	cd `pbpaste`
 }
 
+# VSCode
+vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 ## Git aliases
 echo "Loading Git aliases..."

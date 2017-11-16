@@ -51,14 +51,6 @@ create_symlink_from_user_root .general-setup
 create_symlink_from_user_root .custom-command-line-prompt
 create_symlink_from_user_root .env-variables
 
-
-## Step 3: Create symlinks to Sublime config
-echo "Installing Sublime config"
-SUBLIME_USER_PACKAGE_DIRECTORY="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
-
-rm -rf "$SUBLIME_USER_PACKAGE_DIRECTORY"
-ln -s `pwd`/sublime/* "$SUBLIME_USER_PACKAGE_DIRECTORY"
-
 # Step 4: Set default Node to system version
 nvm alias default system
 
