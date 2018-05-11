@@ -13,6 +13,12 @@ cd_dir () {
 # VSCode
 vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
+## Docker aliases
+alias dkrlist="docker ps -aq"
+alias dkrstop="docker stop $(docker ps -aq)"
+alias dkrrmcont="docker rm $(docker ps -aq)"
+alias dkrrmimages="docker rmi $(docker images -q)"
+
 ## Git aliases
 echo "Loading Git aliases..."
 alias git=hub
