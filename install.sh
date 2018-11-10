@@ -51,6 +51,8 @@ create_symlink_from_user_root .general-setup
 create_symlink_from_user_root .custom-command-line-prompt
 create_symlink_from_user_root .env-variables
 
+source ~/.index-dotfile
+
 # Step 4: Set default Node to system version
 nvm alias default system
 
