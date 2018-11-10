@@ -1,3 +1,6 @@
+# Install latest stable node
+nvm install stable
+
 ## Use default Node version
 nvm use default
 
