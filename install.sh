@@ -16,14 +16,14 @@
 ##############################
 
 # Default command line arg values
-INSTALL_HOMEBREW_CASK=false
+INSTALL_HOMEBREW=false
 
 ## Step 0: Parse command line args
 while getopts "c" opt; do
 	case $opt in
 		c)
-			INSTALL_HOMEBREW_CASK=true
-			echo "-c specified! Will install programs via Homebrew Cask" >&2
+			INSTALL_HOMEBREW=true
+			echo "-c specified! Will install programs via Homebrew" >&2
 			;;
 		\?)
 			echo "Invalid option: -$OPTARG" >&2
@@ -32,9 +32,9 @@ while getopts "c" opt; do
 	esac
 done
 
-## Step 1: install programs via Homebrew Cask
-if [ "$INSTALL_HOMEBREW_CASK" = true ] ; then
-	echo "Installing apps via Homebrew Cask"
+## Step 1: install programs via Homebrew 
+if [ "$INSTALL_HOMEBREW" = true ] ; then
+	echo "Installing apps via Homebrew"
 	sh brew.sh
 fi
 
