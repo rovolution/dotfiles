@@ -4,5 +4,9 @@ nvm install stable
 ## Use default Node version
 nvm use default
 
-## Step 5: Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
+## Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
 stty -ixon
+
+## TODO: Check if .bash_profile exists in root directory. if not, create it
+
+## TODO: Append 'source ~/.index-dotfile' to .bash_profile
