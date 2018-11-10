@@ -18,6 +18,7 @@ brew install rename
 brew install jq
 brew install diff-so-fancy
 brew install caskroom/cask/brew-cask
+brew install bash-completion
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
@@ -29,6 +30,7 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install postman
+brew cask install docker
 
 echo "installing browsers"
 brew cask install google-chrome
@@ -42,7 +44,6 @@ brew cask install shiftit
 brew cask install notational-velocity
 brew cask install spotify
 brew cask install spotify-notifications
-brew cask install dropbox
 brew cask install slack
 brew cask install lastpass
 brew cask install vlc
