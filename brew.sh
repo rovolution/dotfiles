@@ -29,6 +29,7 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install postman
+brew cask install docker
 
 echo "installing browsers"
 brew cask install google-chrome
