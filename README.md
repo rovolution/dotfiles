@@ -8,4 +8,6 @@ I need to store my dotfiles somewhere.
 
 2) Run the `install.sh` script
 
-3) source the `.index-dotfile` in the `.bash_profile` of the machine
+3) Confirm all the prompts
+
+4) Open a new terminal and verify everything works.
