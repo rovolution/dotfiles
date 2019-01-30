@@ -19,6 +19,9 @@ alias dkrstop="docker stop $(docker ps -aq)"
 alias dkrrmcont="docker rm $(docker ps -aq)"
 alias dkrrmimages="docker rmi $(docker images -q)"
 
+## Git functions
+gitrecent () { git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n5 ;}
+
 ## Git aliases
 echo "Loading Git aliases..."
 alias git=hub
