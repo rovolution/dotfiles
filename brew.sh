@@ -49,6 +49,8 @@ brew cask install slack
 brew cask install lastpass
 brew cask install vlc
 brew cask install flux
+brew cask install iterm2
+brew cask install flycut
 
 echo "Finish"
 brew cleanup --force
