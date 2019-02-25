@@ -25,6 +25,7 @@ gitrecent () { git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ pri
 ## Git aliases
 echo "Loading Git aliases..."
 alias git=hub
+alias gs="git status"
 alias gpbt="git push && git push --tags" # Push commits and tags to origin remote
 alias gb="git rev-parse --abbrev-ref HEAD" # Display current branch name
 alias gcb="git checkout -b" # Checkout new branch
