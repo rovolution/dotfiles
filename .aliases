@@ -10,6 +10,9 @@ cd_dir () {
 	cd `pbpaste`
 }
 
+lowercase () { echo $1 | tr '[:upper:'] '[:lower:]' | pbcopy ;}
+uppercase () { echo $1 | tr '[:lower:'] '[:upper:]' | pbcopy ;}
+
 # VSCode
 vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
