@@ -28,6 +28,7 @@ replace() { ag -0 -l "$1" | AGR_FROM="$1" AGR_TO="$2" xargs -0 perl -pi -e 's/$E
 
 ## Git functions
 gitrecent () { git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n5 ;}
+gitsweep() { git branch --merged | egrep -v "(^\*|master|gh-pages)" | xargs -n 1 git branch -d ;}
 
 ## Git aliases
 echo "Loading Git aliases..."
