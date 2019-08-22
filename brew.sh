@@ -31,6 +31,8 @@ brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install postman
 brew cask install docker
+brew cask install sequel-pro
+brew cask install postico
 
 echo "installing browsers"
 brew cask install google-chrome
@@ -44,9 +46,7 @@ brew cask install shiftit
 brew cask install notational-velocity
 brew cask install spotify
 brew cask install spotify-notifications
-brew cask install dropbox
 brew cask install slack
-brew cask install lastpass
 brew cask install vlc
 brew cask install flux
 brew cask install iterm2
