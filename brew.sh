@@ -19,6 +19,7 @@ brew install jq
 brew install watch
 brew install diff-so-fancy
 brew install caskroom/cask/brew-cask
+brew install wrk # http-benchmarking util
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
