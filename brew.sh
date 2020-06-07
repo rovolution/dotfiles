@@ -52,6 +52,8 @@ brew cask install vlc
 brew cask install flux
 brew cask install iterm2
 brew cask install flycut
+brew cask install fanny
+brew cask install macs-fan-control
 
 echo "Finish"
 brew cleanup --force
