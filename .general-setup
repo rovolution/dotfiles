@@ -1,3 +1,8 @@
+# Variables
+BASH_PROFILE_PATH="$HOME/.bash_profile"
+INDEX_DOTFILE_PATH="$HOME/.index-dotfile"
+SOURCE_INDEX_DOTFILE_LINE="source ${INDEX_DOTFILE_PATH}"
+
 # Install latest stable node
 nvm install stable
 
@@ -8,11 +13,11 @@ nvm use default
 stty -ixon
 
 ## Check if .bash_profile exists in root directory. if not, create it
-if [ ! -f ~/.bash_profile ]
+if [ ! -f $BASH_PROFILE_PATH ]
 then
     echo ".bash_profile does not exist. Creating a .bash_profile in user root directory."
-    touch ~/.bash_profile
+    touch $BASH_PROFILE_PATH
 fi
 
 ## Append 'source ~/.index-dotfile' to .bash_profile
-printf '%s %s\n\n' source ~/.index-dotfile > ~/.bash_profile
+grep -q "$SOURCE_INDEX_DOTFILE_LINE" "$BASH_PROFILE_PATH" || echo "$SOURCE_INDEX_DOTFILE_LINE" >> "$BASH_PROFILE_PATH"
