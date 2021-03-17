@@ -23,8 +23,8 @@ brew install wrk # http-benchmarking util
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-echo "tapping caskroom/versions"
-brew tap caskroom/versions
+echo "tapping caskroom versions"
+brew tap homebrew/cask-versions
 
 echo "installing developer tools"
 brew cask install iterm2
