@@ -54,5 +54,5 @@ brew install iterm2
 brew install flycut
 
 echo "Finish"
-brew cleanup --force
+brew cleanup
 rm -f -r /Library/Caches/Homebrew/*
