@@ -48,6 +48,7 @@ brew install notational-velocity
 brew install spotify
 brew install spotify-notifications
 brew install slack
+brew install telegram
 brew install vlc
 brew install flux
 brew install iterm2
