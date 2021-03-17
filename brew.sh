@@ -27,31 +27,31 @@ echo "tapping caskroom versions"
 brew tap homebrew/cask-versions
 
 echo "installing developer tools"
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install virtualbox
-brew cask install postman
-brew cask install docker
-brew cask install sequel-pro
-brew cask install postico
+brew install iterm2
+brew install visual-studio-code
+brew install virtualbox
+brew install postman
+brew install docker
+brew install sequel-pro
+brew install postico
 
 echo "installing browsers"
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install firefox
+brew install google-chrome
+brew install google-chrome-canary
+brew install firefox
 
 echo "installing apps"
-brew cask install licecap
-brew cask install fluid
-brew cask install shiftit
-brew cask install notational-velocity
-brew cask install spotify
-brew cask install spotify-notifications
-brew cask install slack
-brew cask install vlc
-brew cask install flux
-brew cask install iterm2
-brew cask install flycut
+brew install licecap
+brew install fluid
+brew install shiftit
+brew install notational-velocity
+brew install spotify
+brew install spotify-notifications
+brew install slack
+brew install vlc
+brew install flux
+brew install iterm2
+brew install flycut
 brew cask install fanny
 brew cask install macs-fan-control
 
