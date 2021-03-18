@@ -31,7 +31,7 @@ brew install iterm2
 brew install visual-studio-code
 brew install virtualbox
 brew install postman
-brew install docker
+brew install --cask docker
 brew install sequel-pro
 brew install postico
 
