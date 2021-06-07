@@ -32,6 +32,7 @@ brew install visual-studio-code
 brew install virtualbox
 brew install postman
 brew install --cask docker
+brew install --cask graphiql
 brew install sequel-pro
 brew install postico
 
