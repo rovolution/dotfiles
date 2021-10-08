@@ -40,12 +40,27 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x32-0x100000</key>
+		<key>0x5c-0x100000-0x2a</key>
 		<dict>
 			<key>Action</key>
 			<integer>29</integer>
+			<key>Escaping</key>
+			<integer>1</integer>
 			<key>Text</key>
 			<string>820A3923-023E-4D9B-9FFB-B7F00BC29953</string>
+			<key>Version</key>
+			<integer>2</integer>
+		</dict>
+		<key>0x7c-0x120000-0x2a</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Escaping</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string>820A3923-023E-4D9B-9FFB-B7F00BC29953</string>
+			<key>Version</key>
+			<integer>2</integer>
 		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
@@ -1037,6 +1052,8 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>kCPKSelectionViewPreferredModeKey</key>
