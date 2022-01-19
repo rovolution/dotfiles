@@ -1,4 +1,6 @@
 source ~/.env-variables
 source ~/.aliases
 source ~/.custom-command-line-prompt
-source ~/.general-setup
+
+## Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
+stty -ixon

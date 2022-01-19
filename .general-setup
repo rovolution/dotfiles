@@ -9,9 +9,6 @@ nvm install stable
 ## Use default Node version
 nvm use default
 
-## Enable use of 'Ctrl + S' to search backwards in "reverse-i-search" mode
-stty -ixon
-
 ## Check if .bash_profile exists in root directory. if not, create it
 if [ ! -f $BASH_PROFILE_PATH ]
 then
