@@ -44,7 +44,8 @@ brew install firefox
 echo "installing apps"
 brew install licecap
 brew install fluid
-brew install shiftit
+brew install --cask hammerspoon
+echo $'\nAfter installing Hammerspoon, need to manually install the Shift-It keycode bindings: See full instructions here: https://github.com/peterklijn/hammerspoon-shiftit\n'
 brew install notational-velocity
 brew install spotify
 brew install spotify-notifications
