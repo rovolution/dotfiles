@@ -1,3 +1,11 @@
+# Mac defaults
+## Show hidden files in Finder
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+
+# Set bash to default terminal
+chsh -s /bin/bash
+
 # Variables
 BASH_PROFILE_PATH="$HOME/.zprofile"
 INDEX_DOTFILE_PATH="$HOME/.index-dotfile"

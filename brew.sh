@@ -29,7 +29,6 @@ brew tap homebrew/cask-versions
 echo "installing developer tools"
 brew install iterm2
 brew install visual-studio-code
-brew install virtualbox
 brew install postman
 brew install --cask docker
 brew install --cask graphiql
@@ -51,7 +50,6 @@ brew install spotify
 brew install spotify-notifications
 brew install slack
 brew install telegram
-brew install vlc
 brew install flux
 brew install iterm2
 brew install flycut
