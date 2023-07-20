@@ -29,7 +29,6 @@ brew tap homebrew/cask-versions
 echo "installing developer tools"
 brew install iterm2
 brew install visual-studio-code
-brew install postman
 brew install --cask docker
 brew install --cask graphiql
 brew install sequel-pro
