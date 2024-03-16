@@ -6,8 +6,11 @@ killall Finder
 # Set bash to default terminal
 chsh -s /bin/bash
 
+# Create bash_profile file
+touch "$HOME/.bash_profile"
+
 # Variables
-BASH_PROFILE_PATH="$HOME/.zprofile"
+BASH_PROFILE_PATH="$HOME/.bash_profile"
 INDEX_DOTFILE_PATH="$HOME/.index-dotfile"
 SOURCE_INDEX_DOTFILE_LINE="source ${INDEX_DOTFILE_PATH}"
 

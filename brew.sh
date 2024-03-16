@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo installing homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "tap for latest versions"
 brew tap homebrew/versions
@@ -18,32 +18,31 @@ brew install rename
 brew install jq
 brew install watch
 brew install diff-so-fancy
-brew install caskroom/cask/brew-cask
-brew install wrk # http-benchmarking util
+brew install homebrew/cask
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 echo "tapping caskroom versions"
 brew tap homebrew/cask-versions
 
-echo "installing developer tools"
+echo "installing terminal + editor"
 brew install iterm2
 brew install visual-studio-code
-brew install --cask docker
-brew install --cask graphiql
-brew install sequel-pro
-brew install postico
 
-echo "installing browsers"
+if [ $1 = "installExtraDevTools" ]; then
+	echo "installing other developer tools"
+	brew install --cask docker
+	brew install --cask graphiql
+	brew install sequel-pro
+	brew install postico
+fi
+
 brew install google-chrome
 brew install google-chrome-canary
 brew install firefox
 
 echo "installing apps"
 brew install licecap
-brew install fluid
-brew install --cask hammerspoon
-echo $'\nAfter installing Hammerspoon, need to manually install the Shift-It keycode bindings: See full instructions here: https://github.com/peterklijn/hammerspoon-shiftit\n'
 brew install notational-velocity
 brew install spotify
 brew install spotify-notifications
