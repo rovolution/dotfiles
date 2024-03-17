@@ -49,6 +49,7 @@ brew install spotify-notifications
 brew install slack
 brew install telegram
 brew install --cask whatsapp
+brew install --cask zoom
 brew install flux
 brew install iterm2
 brew install flycut
