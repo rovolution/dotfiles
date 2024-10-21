@@ -25,9 +25,10 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 echo "tapping caskroom versions"
 brew tap homebrew/cask-versions
 
-echo "installing terminal + editor"
+echo "installing terminal + editor(s)"
 brew install iterm2
 brew install visual-studio-code
+brew install cursor
 
 if [ $1 = "installExtraDevTools" ]; then
 	echo "installing other developer tools"
