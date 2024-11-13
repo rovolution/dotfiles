@@ -52,6 +52,7 @@ brew install telegram
 brew install --cask whatsapp
 brew install --cask zoom
 brew install --cask flux
+brew install --cask background-music
 brew install iterm2
 brew install flycut
 
