@@ -55,6 +55,7 @@ brew install --cask flux
 brew install --cask background-music
 brew install iterm2
 brew install flycut
+brew install --cask signal
 
 echo "Finish"
 brew cleanup
