@@ -1,5 +1,26 @@
 #!/bin/sh
 
+# Default command line arg values
+INSTALL_DEV_TOOLS=false
+INSTALL_PERSONAL_TOOLS=false
+
+## Step 0: Parse command line args
+while getopts cd opt; do
+	case $opt in
+		d)     
+			INSTALL_DEV_TOOLS=true
+			;;
+		p)
+			INSTALL_PERSONAL_TOOLS=true
+			;;
+		*)
+			echo "Invalid option: -$OPTARG" >&2
+			exit
+			;;
+	esac
+done
+
+
 echo installing homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -30,7 +51,7 @@ brew install iterm2
 brew install visual-studio-code
 brew install cursor
 
-if [ $1 = "installExtraDevTools" ]; then
+if [ $INSTALL_DEV_TOOLS = true ]; then
 	echo "installing other developer tools"
 	brew install --cask docker
 	brew install --cask graphiql
@@ -49,13 +70,17 @@ brew install spotify
 brew install spotify-notifications
 brew install slack
 brew install telegram
-brew install --cask whatsapp
 brew install --cask zoom
 brew install --cask flux
 brew install --cask background-music
 brew install iterm2
 brew install flycut
-brew install --cask signal
+
+if [ $INSTALL_PERSONAL_TOOLS = true ]; then
+	echo "installing personal apps"
+	brew install --cask whatsapp
+	brew install --cask signal
+fi
 
 echo "Finish"
 brew cleanup
