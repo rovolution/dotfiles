@@ -5,7 +5,7 @@ INSTALL_DEV_TOOLS=false
 INSTALL_PERSONAL_TOOLS=false
 
 ## Step 0: Parse command line args
-while getopts cd opt; do
+while getopts dp opt; do
 	case $opt in
 		d)     
 			INSTALL_DEV_TOOLS=true
@@ -20,14 +20,13 @@ while getopts cd opt; do
 	esac
 done
 
-
-echo installing homebrew
+# echo installing homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "tap for latest versions"
 brew tap homebrew/versions
 
-echo "installing brew formulae + binaries"
+# echo "installing brew formulae + binaries"
 brew install htop
 brew install ag
 brew install git
@@ -43,10 +42,10 @@ brew install homebrew/cask
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-echo "tapping caskroom versions"
+# echo "tapping caskroom versions"
 brew tap homebrew/cask-versions
 
-echo "installing terminal + editor(s)"
+# echo "installing terminal + editor(s)"
 brew install iterm2
 brew install visual-studio-code
 brew install cursor
@@ -63,7 +62,7 @@ brew install google-chrome
 brew install google-chrome-canary
 brew install firefox
 
-echo "installing apps"
+# echo "installing apps"
 brew install licecap
 brew install notational-velocity
 brew install spotify
@@ -82,6 +81,6 @@ if [ $INSTALL_PERSONAL_TOOLS = true ]; then
 	brew install --cask signal
 fi
 
-echo "Finish"
+# echo "Finish"
 brew cleanup
 rm -f -r /Library/Caches/Homebrew/*
