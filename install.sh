@@ -12,18 +12,21 @@
 # -c :: if specified, will install apps via homebrew cask
 # -d :: if specified, will install developer tools
 # -p :: if specified, will install personal apps
+# -g :: if specified, will install gitconfig
 
 ##############################
 # BEGIN SCRIPT
 ##############################
 
+
 # Default command line arg values
 INSTALL_HOMEBREW=false
 INSTALL_DEV_TOOLS=false
 INSTALL_PERSONAL_TOOLS=false
+INSTALL_GITCONFIG=false
 
 ## Step 0: Parse command line args
-while getopts cdp opt; do
+while getopts cdpg opt; do
 	case $opt in
 		c)
 			INSTALL_HOMEBREW=true
@@ -36,6 +39,10 @@ while getopts cdp opt; do
 		p)
 			INSTALL_PERSONAL_TOOLS=true
 			echo "installing personal tools" >&2
+			;;
+		g)
+			INSTALL_GITCONFIG=true
+			echo "installing gitconfig" >&2
 			;;
 		*)
 			echo "Invalid option: -$OPTARG" >&2
@@ -85,6 +92,8 @@ source ~/.index-dotfile
 nvm alias default system
 
 # Create .gitconfig symlink
-echo "Installing Git config"
-rm -rf ~/.gitconfig
-ln -s `pwd`/.gitconfig ~/.gitconfig
+if [ "$INSTALL_GITCONFIG" = true ] ; then
+	echo "Installing Git config"
+	rm -rf ~/.gitconfig
+	ln -s `pwd`/.gitconfig ~/.gitconfig
+fi

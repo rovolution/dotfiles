@@ -4,10 +4,18 @@ I need to store my dotfiles somewhere.
 
 ## Setup
 
-1) Clone the repo
+1. Clone the repo
 
-2) Run the `install.sh` script
+2. Run the `install.sh` script
 
-3) Confirm all the prompts
+```bash
+# Ex: Personal Laptop
+$ sh install.sh -c -d -p -g
 
-4) Open a new terminal and verify everything works.
+# Ex: Work Laptop
+$ sh install.sh -c -d
+```
+
+3. Confirm all the prompts
+
+4. Open a new terminal and verify everything works.
