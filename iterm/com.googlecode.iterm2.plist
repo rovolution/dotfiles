@@ -192,6 +192,8 @@
 	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
+	<key>Mark Alert Action</key>
+	<string>Ring Bell</string>
 	<key>MaxVertically</key>
 	<false/>
 	<key>New Bookmarks</key>
@@ -428,7 +430,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -821,6 +823,8 @@
 				<string></string>
 			</dict>
 			<key>Send Code When Idle</key>
+			<false/>
+			<key>Send New Output Alert</key>
 			<false/>
 			<key>Set Local Environment Vars</key>
 			<true/>
