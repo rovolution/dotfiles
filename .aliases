@@ -10,8 +10,11 @@ cd_dir () {
 	cd `pbpaste`
 }
 
-lowercase () { echo $1 | tr '[:upper:'] '[:lower:]' | pbcopy ;}
-uppercase () { echo $1 | tr '[:lower:'] '[:upper:]' | pbcopy ;}
+## Ex: $ echo 'make this uppercase' | uppercase | pbcopy
+## After executing, 'MAKE THIS UPPERCASE" is available in clipboard
+lowercase() { tr '[:upper:]' '[:lower:]'; }
+uppercase() { tr '[:lower:]' '[:upper:]'; }
+
 
 # VSCode
 vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
