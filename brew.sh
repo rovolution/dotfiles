@@ -68,7 +68,6 @@ brew install notational-velocity
 brew install spotify
 brew install spotify-notifications
 brew install slack
-brew install telegram
 brew install --cask zoom
 brew install --cask flux
 brew install --cask background-music
@@ -79,6 +78,8 @@ if [ $INSTALL_PERSONAL_TOOLS = true ]; then
 	echo "installing personal apps"
 	brew install --cask whatsapp
 	brew install --cask signal
+	brew install telegram
+	brew install --cask discord
 fi
 
 # echo "Finish"
