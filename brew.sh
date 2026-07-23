@@ -48,7 +48,6 @@ brew tap homebrew/cask-versions
 # echo "installing terminal + editor(s)"
 brew install iterm2
 brew install visual-studio-code
-brew install cursor
 
 if [ $INSTALL_DEV_TOOLS = true ]; then
 	echo "installing other developer tools"
