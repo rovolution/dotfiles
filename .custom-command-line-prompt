@@ -18,7 +18,7 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
 
-PS1="$GREEN\u@\h$NO_COLOR:\w:$CYAN\$(parse_node_version)$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+PS1="$PS1$GREEN\u@\h$NO_COLOR:\w:$CYAN\$(parse_node_version)$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 ####
 #### Switch to specified node version for project
